@@ -2399,6 +2399,7 @@ input, select, textarea {
 			
 			#main > section.two {
 				background-color: #f5fafa;
+				
 			}
 
 			#main > section.three {
@@ -2869,4 +2870,13 @@ input, select, textarea {
 
 	body.is-preload #banner:after {
 		opacity: 0;
+	}
+
+	.language-Icon {
+		margin-left: 2em;
+		color:#41484c;
+	}
+
+	.activeLang {
+		color:white
 	}
