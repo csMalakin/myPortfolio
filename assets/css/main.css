@@ -166,12 +166,7 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
-		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		outline: 0;
+		
 	}
 
 		a:hover {
@@ -216,6 +211,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+		
 	}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -2407,7 +2403,7 @@ input, select, textarea {
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #f5fafa;
 			}
 
 			#main > section.five {
@@ -2862,7 +2858,7 @@ input, select, textarea {
 		height:100%
 	}
 
-	.secondRow {
+	.nextRow {
 		margin-top: 0.2em;
 	}
 
@@ -2880,3 +2876,53 @@ input, select, textarea {
 	.activeLang {
 		color:white
 	}
+
+
+	.skillLogo{
+		height: 15rem;
+		aspect-ratio: 1/1;
+		filter:grayscale(1);
+		scale: 75%;
+	}
+
+	
+
+	.skillLogo:hover{
+		filter:grayscale(0);
+		scale:100%
+	}
+
+
+/*
+Custom CSS
+*/
+.row .portfolioContainer p{
+	margin:0;
+	padding:1rem;
+	line-height: 1;
+}
+
+.container .tech span{
+	font-weight: 900;
+}
+
+
+.portfolioContainer .contentContainer{
+	min-height: 10rem;
+}
+.item .imageContainer{
+	margin: 0 auto;
+	aspect-ratio: 16/9;
+	width: 25rem;
+	background-color: white;
+}
+
+.item .image{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+article{
+	background-color: white;
+	margin-top: 1rem;
+}
