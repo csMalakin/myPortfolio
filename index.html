@@ -93,23 +93,23 @@
 							</header>
 							
 							<div class="logoContainer row aln-center">
-								<a href="#skills" class="col-3"><img class="skillLogo"  src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" alt=""></a>
+								<a href="#portfolio" id="htmlLink"class="col-1"><img class="skillLogo" id="htmlLogo"  src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" alt=""></a>
 								
 
 								
-								<a href="#skills" class="col-3"><img class="skillLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt=""></a>
+								<a href="#portfolio" id="cssLink"class="col-1"><img class="skillLogo" id="cssLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt=""></a>
 
-								<a href="#skills" class="col-3"><img class="skillLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt=""></a>
+								<a href="#portfolio" id="javaScriptLink"class="col-1"><img class="skillLogo" id="javaScriptLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt=""></a>
 
-								<a href="#skills" class="col-3"><img class="skillLogo" src="https://www.doag.org/fileadmin/243px-Java-Logo-svg.png" alt="">
-</a>
-								<a href="#skills" class="col-3"><img class="skillLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt=""></a>
+								<a href="#portfolio" id="javaLink"class="col-1"><img class="skillLogo" id="javaLogo" src="https://www.doag.org/fileadmin/243px-Java-Logo-svg.png" alt="">
+								</a>
+								<a href="#portfolio" id="nodeLink"class="col-1"><img class="skillLogo" id="nodeLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt=""></a>
 								
-								<a href="#skills" class="col-3">
-								<img class="skillLogo" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo-500x313.png" alt=""></a>
+								<a href="#portfolio" id="mongoLink"class="col-1">
+								<img class="skillLogo" id="mongoLogo" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo-500x313.png" alt=""></a>
 
-								<a href="#skills" class="col-3">
-								<img class="skillLogo" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2017/07/handlebars-js.png?fit=500%2C500&ssl=1&</a>resize=350%2C200" alt=""></a>
+								<a href="#portfolio" id="handlbarsLink"class="col-1">
+								<img class="skillLogo" id="handlebarsLogo" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2017/07/handlebars-js.png?fit=500%2C500&ssl=1&</a>resize=350%2C200" alt=""></a>
 								
 								
 
@@ -144,21 +144,24 @@
 						<div class="container">
 
 							<header>
-								<h2>Meine letzten Projekte</h2>
+								<h2 id="projectHeader">Meine letzten Projekte</h2>
 							</header>
 
-							<p>Hier sehen Sie an wlechen Projekten ich zuletzt gearbeitet habe</p>
+							
 
 							<div class="row">
-								<div class="portfolioContainer col-12-mobile">
+								
+								<h1 id="selectSkillText"class="col-12">Wählen Sie bitte aus meinen Skills eine Technologie aus um Projekte zu sehen bei denen ich diese eingesetzt habe</h1>
+
+								<div class="portfolioContainer col-6 col-12-mobile hidden html css">
 									<article class="item">
 										<div class="imageContainer">
-										<a href="https://malakinsrestauranttemplate.netlify.app/" class="image"><img src="images/cousinePortfolioImage.png" alt="" /></a>
-									</div>
+											<a href="https://malakinsrestauranttemplate.netlify.app/" class="image"><img src="images/cousinePortfolioImage.png" alt="" /></a>
+										</div>
 										<header>
 											<div class="contentContainer">
-											<h3 class="content">Webauftritt für ein fiktives Restaurant</h3>
-											<p>Ein einfaches Projekt um meine Grundkentnisse zu verfestigen</p>
+												<h3 class="content">Webauftritt für ein fiktives Restaurant</h3>
+												<p>Ein einfaches Projekt um meine Grundkentnisse zu verfestigen</p>
 											</div>
 											<p class="tech">Tech: <span class="bold">HTML</span class="bold">, <span class="bold">CSS</span class="bold">, JavaScript</p>
 											
@@ -167,16 +170,16 @@
 									</article>
 									
 								</div>
-								<div class="portfolioContainer col-12-mobile">
+								<div class="portfolioContainer col-6 col-12-mobile hidden html css">
 									<article class="item">
 										<div class="imageContainer">
-										<a href="https://malakinsbarbershoptemplate.netlify.app/" class="image"><img src="images/barberPortfolio.png" alt="" /></a>
-									</div>
+											<a href="https://malakinsbarbershoptemplate.netlify.app/" class="image"><img src="images/barberPortfolio.png" alt="" /></a>
+										</div>
 										<header>
 											<div class="contentContainer">
-											<h3 class="content">Barbershop Template</h3>
-											<p>Bei diesem Projekt ging es mir darum ein HTML5 Template zu verstehen und anzupassen</p>
-										</div>
+												<h3 class="content">Barbershop Template</h3>
+												<p>Bei diesem Projekt ging es mir darum ein HTML5 Template zu verstehen und anzupassen</p>
+											</div>
 											<p class="tech">Tech: <span class="bold">HTML5 Template</span>, <span class="bold">HTML</span>, <span class="bold">CSS</span>, JavaScript</p>
 										
 											<a href="https://malakinsbarbershoptemplate.netlify.app/" class="customButton"> reinschauen</a>
@@ -187,67 +190,86 @@
 									
 									
 								</div>
+
+								<div class="portfolioContainer col-6 col-12-mobile hidden java">
+									<article class="item">
+										<div class="imageContainer">
+											<a href="#" class="image"><img src="images/javaKurs.png" alt="" /></a>
+										</div>
+										<header>
+											<div class="contentContainer">
+												<h3 class="content">Java Kentnisse</h3>
+												<p>Der MOOC der Universiät Helsinki "Java Programming" war der Grund warum ich die Umschulung überhaupt erst begonnen habe. Während der Umschulung war Java auch die Programiersprache mit der sich am meisten befasst wurde. Dabei wurden kleinere Projekte im Unterricht umgesetzt. </p>
+											</div>
+												<p class="tech">Tech: <span class="bold">Java</span></p>
+											
+												<a href="#" class="customButton"> spielen</a>
+										</header>
+									</article>
+								</div>
 								
-							</div>
-						<div class="row">
-							<div class="portfolioContainer col-12-mobile">
-								<article class="item">
-								<div class="imageContainer">
-									<a href="https://csmalakin.github.io/RockPaperScissorsGame/" class="image"><img src="images/rockPaperScissors.png" alt="" /></a>
-								</div>
-									<header>
-										<div class="contentContainer">
-										<h3 class="content">A Game of Rock Paper Scissors</h3>
-										<p>In diesem Projekt ging es mir darum verschiedenen JavaScript Funktionen einzusetzten um das DOM zu manipulieren</p>
+							
+						
+								<div class="portfolioContainer col-6 	col-12-mobile hidden javaScript">
+									<article class="item">
+									<div class="imageContainer">
+										<a href="https://csmalakin.github.io/RockPaperScissorsGame/" class="image"><img src="images/rockPaperScissors.png" alt="" /></a>
 									</div>
-										<p class="tech">Tech: HTML, CSS, <span class="bold">JavaScript</span></p>
+										<header>
+											<div class="contentContainer">
+												<h3 class="content">A Game of Rock Paper Scissors</h3>
+												<p>In diesem Projekt ging es mir darum verschiedenen JavaScript Funktionen einzusetzten um das DOM zu manipulieren</p>
+											</div>
+											<p class="tech">Tech: HTML, CSS, <span class="bold">JavaScript</span></p>
 										
-										<a href="https://csmalakin.github.io/RockPaperScissorsGame/" class="customButton"> spielen</a>
-									</header>
-								</article>
-							</div>
+											<a href="https://csmalakin.github.io/RockPaperScissorsGame/" class="customButton"> spielen</a>
+										</header>
+									</article>
+								</div>
+								
 
 						
 
+							
+								<div class="portfolioContainer col-6 col-12-mobile hidden javaScript">
+										<article class="item">
+											<div class="imageContainer">
+												<a href="#" class="image"><img src="images/dbSandboxScreenshot.png" alt="" /></a>
+											</div>
+										<header>
+											<div class="contentContainer">
+												<h3 class="content">Array Sandbox</h3>
+												<p>In diesem Projekt lag mein Fokus darauf verschiedene Array Methoden zu anzuwenden und zu vergleichen</p>
+											</div>
+												<p class="tech">Tech: HTML, CSS, <span class="bold">JavaScript</span></p>
+											
+												<a href="#" class="customButton"> spielen</a>
+										</header>
+									</article>
+								</div>
+
 						
-							<div class="portfolioContainer col-12-mobile">
-								<article class="item">
-								<div class="imageContainer">
-									<a href="#" class="image"><img src="images/dbSandboxScreenshot.png" alt="" /></a>
+						
+								<div class="portfolioContainer col-6 col-12-mobile hidden html css javaScript node mongoDb handlebars">
+									<article class="item">
+										<div class="imageContainer">
+											<a href="#" class="image"><img src="images/projektarbeitScreenshot.png" alt="" /></a>
+										</div>
+										<header>
+											<div class="contentContainer">
+												<h3 class="content">Webbassierte CRUD Anwendung</h3>
+												<p>Bei diesem Projekt handelt es sich um meine Projektarbeit für die IHK. Gerne lasse ich Ihnen die Projektdokumentation für dieses Projekt zukommen</p>
+											</div>
+												<p class="tech">Tech: HTML, CSS, JavaScript, <span class="bold">Node.js</span>, <span class="bold">express.js</span>, <span class="bold">Handlebars.js</span>, <span class="bold">MongoDB</span></p>
+											
+												<a href="#" class="customButton"> spielen</a>
+										</header>
+									</article>
 								</div>
-									<header>
-										<div class="contentContainer">
-										<h3 class="content">Array Sandbox</h3>
-										<p>In diesem Projekt lag mein Fokus darauf verschiedene Array Methoden zu anzuwenden und zu vergleichen</p>
-									</div>
-										<p class="tech">Tech: HTML, CSS, <span class="bold">JavaScript</span></p>
-										
-										<a href="#" class="customButton"> spielen</a>
-									</header>
-								</article>
-							</div>
-
-						</div>
-						<div class="row">
-							<div class="portfolioContainer col-12-mobile">
-								<article class="item">
-								<div class="imageContainer">
-									<a href="#" class="image"><img src="images/projektarbeitScreenshot.png" alt="" /></a>
-								</div>
-									<header>
-										<div class="contentContainer">
-										<h3 class="content">Webbassierte CRUD Anwendung</h3>
-										<p>Bei diesem Projekt handelt es sich um meine Projektarbeit für die IHK. Gerne lasse ich Ihnen die Projektdokumentation für dieses Projekt zukommen</p>
-									</div>
-										<p class="tech">Tech: HTML, CSS, JavaScript, <span class="bold">Node.js</span>, <span class="bold">express.js</span>, <span class="bold">Handlebars.js</span>, <span class="bold">MongoDB</span></p>
-										
-										<a href="#" class="customButton"> spielen</a>
-									</header>
-								</article>
 							</div>
 
 
-						</div>
+						
 					</section>
 
 

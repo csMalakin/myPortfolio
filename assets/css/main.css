@@ -368,7 +368,7 @@ input, select, textarea {
 		}
 
 		.row > .col-1 {
-			width: 8.33333%;
+			width: 14%;
 		}
 
 		.row > .off-1 {
@@ -628,7 +628,7 @@ input, select, textarea {
 				}
 
 				.row > .col-1-wide {
-					width: 8.33333%;
+					width: 14%;
 				}
 
 				.row > .off-1-wide {
@@ -874,7 +874,7 @@ input, select, textarea {
 				}
 
 				.row > .col-1-normal {
-					width: 8.33333%;
+					width: 14%;
 				}
 
 				.row > .off-1-normal {
@@ -1119,7 +1119,7 @@ input, select, textarea {
 				}
 
 				.row > .col-1-narrow {
-					width: 8.33333%;
+					width: 14%;
 				}
 
 				.row > .off-1-narrow {
@@ -1364,7 +1364,7 @@ input, select, textarea {
 				}
 
 				.row > .col-1-narrower {
-					width: 8.33333%;
+					width: 14%;
 				}
 
 				.row > .off-1-narrower {
@@ -1609,7 +1609,7 @@ input, select, textarea {
 				}
 
 				.row > .col-1-mobile {
-					width: 8.33333%;
+					width: 14%;
 				}
 
 				.row > .off-1-mobile {
@@ -2879,7 +2879,7 @@ input, select, textarea {
 
 
 	.skillLogo{
-		height: 15rem;
+		width: 8rem;
 		aspect-ratio: 1/1;
 		filter:grayscale(1);
 		scale: 75%;
@@ -2891,6 +2891,12 @@ input, select, textarea {
 		filter:grayscale(0);
 		scale:100%
 	}
+	
+	 .selected{
+		filter: grayscale(0);
+		scale: 100%;
+	}
+	
 
 
 /*
@@ -2900,6 +2906,7 @@ Custom CSS
 	margin:0;
 	padding:1rem;
 	line-height: 1;
+	min-height: 6rem;
 }
 
 .container .tech span{
@@ -2925,4 +2932,12 @@ Custom CSS
 article{
 	background-color: white;
 	margin-top: 1rem;
+}
+
+#portfolio .row h1{
+	font-weight: 900;
+}
+
+#portfolio .row .hidden{
+	display: none;
 }

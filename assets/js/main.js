@@ -8,7 +8,8 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$nav = $('#nav');
+		$nav = $('#nav'),
+		$skills=$('#skills');
 
 	// Breakpoints.
 		breakpoints({
@@ -94,6 +95,75 @@
 
 			});
 
+	//Skills Scrolly
+
+	var $skills_a = $skills.find('a');
+
+	$skills_a
+		.addClass('scrolly')
+		.on('click', function(e) {
+
+			var $this = $(this);
+
+			// External link? Bail.
+				if ($this.attr('href').charAt(0) != '#')
+					return;
+
+			// Prevent default.
+				e.preventDefault();
+
+			// Deactivate all links.
+				$nav_a.removeClass('active');
+
+			// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+				$this
+					.addClass('active')
+					.addClass('active-locked');
+
+		})
+		.each(function() {
+
+			var	$this = $(this),
+				id = $this.attr('href'),
+				$section = $(id);
+
+			// No section for this link? Bail.
+				if ($section.length < 1)
+					return;
+
+			// Scrollex.
+				$section.scrollex({
+					mode: 'middle',
+					top: '-10vh',
+					bottom: '-10vh',
+					initialize: function() {
+
+						// Deactivate section.
+							$section.addClass('inactive');
+
+					},
+					enter: function() {
+
+						// Activate section.
+							$section.removeClass('inactive');
+
+						// No locked links? Deactivate all links and activate this section's one.
+							if ($skills_a.filter('.active-locked').length == 0) {
+
+								$skills_a.removeClass('active');
+								$this.addClass('active');
+
+							}
+
+						// Otherwise, if this section's link is the one that's locked, unlock it.
+							else if ($this.hasClass('active-locked'))
+								$this.removeClass('active-locked');
+
+					}
+				});
+
+		});
+
 	// Scrolly.
 		$('.scrolly').scrolly();
 
@@ -123,5 +193,116 @@
 })(jQuery);
 
 
+let htmlLogo=document.getElementById("htmlLogo")
+let cssLogo=document.getElementById("cssLogo")
+
+
+let skillLogos = document.querySelectorAll(".skillLogo")
+
+for(const skillLogo of skillLogos){
+	skillLogo.addEventListener("click",(element)=>{
+		resetClasslist()
+		addSelected(element)
+		resetHidden()
+		
+		let projects=""
+
+		switch (element.explicitOriginalTarget.id) {
+			
+			case "htmlLogo":
+				 projects= document.querySelectorAll(".html")
+				for(const project of projects){
+					project.classList.remove("hidden")
+
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen HTML eingesetzt wurde"
+				break
+			case "cssLogo":
+				 projects=document.querySelectorAll(".css")
+				for(const project of projects){
+					project.classList
+					.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen CSS eingesetzt wurde"
+				break
+			case "javaScriptLogo":
+				projects=document.querySelectorAll(".javaScript")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen JavaScript eingesetzt wurde"
+				break
+				
+			case "javaLogo":
+					projects=document.querySelectorAll(".java")
+					for(const project of projects){
+						   project.classList.remove("hidden")
+					}
+					document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen Java ingeesetzt wurde"
+					break
+			
+			case "nodeLogo":
+				projects=document.querySelectorAll(".node")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen node.js eingesetzt wurde"
+				break
+
+			case "mongoLogo":
+				projects=document.querySelectorAll(".mongoDb")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen MongoDB eingesetzt wurde"
+				break
+
+			case "handlebarsLogo":
+					projects=document.querySelectorAll(".handlebars")
+					for(const project of projects){
+						   project.classList.remove("hidden")
+					}
+					document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen Handlebars.js eingesetzt wurde"
+					break
+		
+			default:
+				break;
+		}
+
+
+
+	})
+}
+
+
+
+
+
+
+
+
+function resetClasslist(){
+	
+	let logos = document.querySelectorAll('.skillLogo')
+	for(const logo of logos){
+		logo.classList.remove("selected")
+	}
+}
+
+function addSelected(element){
+	console.log(element.explicitOriginalTarget.id)
+	document.getElementById(element.explicitOriginalTarget.id).classList.add("selected")
+	
+}
+
+function resetHidden(){
+	let skills= document.querySelectorAll(".portfolioContainer")
+
+	for(const skill of skills){
+		skill.classList.add("hidden")
+	}
+
+	document.getElementById("selectSkillText").classList.add("hidden")
+}
 
 
