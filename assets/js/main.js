@@ -271,7 +271,7 @@ for(const skillLogo of skillLogos){
 
 
 
-	})
+	}
 }
 for(const skillLogo of skillLogos){
 	skillLogo.addEventListener("click",(element)=>{
