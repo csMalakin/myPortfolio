@@ -200,7 +200,81 @@ let cssLogo=document.getElementById("cssLogo")
 let skillLogos = document.querySelectorAll(".skillLogo")
 
 for(const skillLogo of skillLogos){
-	skillLogo.addEventListener("touchstart click",(element)=>{
+	skillLogo.addEventListener("touchstart",(element)=>{
+		resetClasslist()
+		addSelected(element)
+		resetHidden()
+		
+		let projects=""
+
+		switch (element.explicitOriginalTarget.id) {
+			
+			case "htmlLogo":
+				 projects= document.querySelectorAll(".html")
+				for(const project of projects){
+					project.classList.remove("hidden")
+
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen HTML eingesetzt wurde"
+				break
+			case "cssLogo":
+				 projects=document.querySelectorAll(".css")
+				for(const project of projects){
+					project.classList
+					.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen CSS eingesetzt wurde"
+				break
+			case "javaScriptLogo":
+				projects=document.querySelectorAll(".javaScript")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen JavaScript eingesetzt wurde"
+				break
+				
+			case "javaLogo":
+					projects=document.querySelectorAll(".java")
+					for(const project of projects){
+						   project.classList.remove("hidden")
+					}
+					document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen Java ingeesetzt wurde"
+					break
+			
+			case "nodeLogo":
+				projects=document.querySelectorAll(".node")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen node.js eingesetzt wurde"
+				break
+
+			case "mongoLogo":
+				projects=document.querySelectorAll(".mongoDb")
+				for(const project of projects){
+					   project.classList.remove("hidden")
+				}
+				document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen MongoDB eingesetzt wurde"
+				break
+
+			case "handlebarsLogo":
+					projects=document.querySelectorAll(".handlebars")
+					for(const project of projects){
+						   project.classList.remove("hidden")
+					}
+					document.getElementById("projectHeader").textContent="Meine letzten Projekte in denen Handlebars.js eingesetzt wurde"
+					break
+		
+			default:
+				break;
+		}
+
+
+
+	})
+}
+for(const skillLogo of skillLogos){
+	skillLogo.addEventListener("click",(element)=>{
 		resetClasslist()
 		addSelected(element)
 		resetHidden()
