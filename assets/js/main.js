@@ -204,10 +204,10 @@ for(const skillLogo of skillLogos){
 		resetClasslist()
 		addSelected(element)
 		resetHidden()
-		
+		console.log(element.originalTarget.id)
 		let projects=""
 
-		switch (element.explicitOriginalTarget.id) {
+		switch (element.originalTarget.id) {
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
