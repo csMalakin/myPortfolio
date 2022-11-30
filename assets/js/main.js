@@ -200,7 +200,7 @@ let cssLogo=document.getElementById("cssLogo")
 let skillLogos = document.querySelectorAll(".skillLogo")
 
 for(const skillLogo of skillLogos){
-	skillLogo.addEventListener("touchstart",(element)=>{
+	skillLogo.addEventListener("touchend",(element)=>{
 		resetClasslist()
 		addSelected(element)
 		resetHidden()
