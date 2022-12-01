@@ -211,7 +211,7 @@ for(const skillLogo of skillLogos){
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
-				 alert(element)
+				 alert(element.originalTarget.id)
 				 console.log(element.originalTarget)
 				for(const project of projects){
 					project.classList.remove("hidden")
