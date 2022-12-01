@@ -211,6 +211,8 @@ for(const skillLogo of skillLogos){
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
+				 alert(element)
+				 console.log(element.originalTarget)
 				for(const project of projects){
 					project.classList.remove("hidden")
 
@@ -363,8 +365,7 @@ function resetClasslist(){
 	}
 }
 
-function addSelected(element){
-	console.log(element.explicitOriginalTarget.id)
+function addSelected(element){	
 	document.getElementById(element.explicitOriginalTarget.id).classList.add("selected")
 	
 }
