@@ -205,20 +205,23 @@ for(const skillLogo of skillLogos){
 		alert("next function resetclasslist")
 		resetClasslist()
 		alert("next function addSelected")
-		addSelected(element)
+		addSelected(element)}
+	}
+for (const skillLogo of skillLogos){
+skillLogo.ontouchend = function (element){
 		alert("last function addSelected")
 		alert("next function resetHidden")
 		resetHidden()
 		alert("next function switch")
 		let projects=""
-		alert(test)
+		alert(element)
 
-		switch (test.originalTarget.id) {
+		switch (element.originalTarget.id) {
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
 				 alert("in htmlLogo")
-				 console.log(test.originalTarget)
+				 console.log(element.originalTarget)
 				for(const project of projects){
 					project.classList.remove("hidden")
 
