@@ -201,7 +201,7 @@ let skillLogos = document.querySelectorAll(".skillLogo")
 
 for(const skillLogo of skillLogos){
 	skillLogo.ontouchstart = function (element){
-		let test =element
+		
 		
 		resetClasslist()
 		
@@ -209,19 +209,20 @@ for(const skillLogo of skillLogos){
 	}
 for (const skillLogo of skillLogos){
 skillLogo.ontouchend = function (element){
-		alert("in touchend")
-		alert("next function resetHidden")
+		let targetID=element.target.id
+		
+		
 		resetHidden()
-		alert("next function switch")
+		
 		let projects=""
-		alert(element)
+		
 
-		switch (element.originalTarget.id) {
+		switch (targetID) {
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
 				 alert("in htmlLogo")
-				 console.log(element.originalTarget)
+				 console.log(targetID)
 				for(const project of projects){
 					project.classList.remove("hidden")
 
