@@ -206,7 +206,7 @@ for(const skillLogo of skillLogos){
 		resetClasslist()
 		alert("next function addSelected")
 		addSelected(element)
-	
+		alert("last function addSelected")
 		alert("next function resetHidden")
 		resetHidden()
 		alert("next function switch")
