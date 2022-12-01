@@ -2502,6 +2502,7 @@ input, select, textarea {
 			}
 			#main .mobileWhite {
 				color: #fff;
+				font-size: 1rem;
 			}
 
 			#main > section.one {
