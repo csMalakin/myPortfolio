@@ -85,7 +85,7 @@ input, select, textarea {
 	body {
 		background: #666;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 18pt;
+		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -104,7 +104,7 @@ input, select, textarea {
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 18pt;
+		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -2430,7 +2430,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 16pt;
 			}
 
 		/* Header */
@@ -2502,7 +2502,7 @@ input, select, textarea {
 			}
 			#main .mobileWhite {
 				color: #fff;
-				font-size: 1rem;
+				
 			}
 
 			#main > section.one {
