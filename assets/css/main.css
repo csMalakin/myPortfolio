@@ -2593,6 +2593,8 @@ input, select, textarea {
 				padding-top: 25%;
 			}
 
+		
+
 
 		/* Item */
 
@@ -2911,6 +2913,9 @@ Custom CSS
 
 .container .tech span{
 	font-weight: 900;
+}
+.portfolioContainer{
+	overflow: hidden;
 }
 
 
