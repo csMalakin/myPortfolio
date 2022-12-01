@@ -2851,6 +2851,7 @@ input, select, textarea {
 		padding: 5px 25px;
 		border: #555;
 		border-radius: 10px;
+		margin: 0 1rem;
 	}
 
 	.portfolioContainer .image {
