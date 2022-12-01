@@ -221,7 +221,7 @@ skillLogo.ontouchend = function (element){
 			
 			case "htmlLogo":
 				 projects= document.querySelectorAll(".html")
-				 alert("in htmlLogo")
+				 
 				 console.log(targetID)
 				for(const project of projects){
 					project.classList.remove("hidden")
