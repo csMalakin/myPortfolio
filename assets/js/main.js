@@ -204,7 +204,8 @@ for(const skillLogo of skillLogos){
 		alert("next function resetclasslist")
 		resetClasslist()
 		alert("next function addSelected")
-		addSelected(element)
+		addSelected(element)}
+		skillLogo.ontouchend = function (element){
 		alert("next function resetHidden")
 		resetHidden()
 		alert("next function switch")
