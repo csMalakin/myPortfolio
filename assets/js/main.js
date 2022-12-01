@@ -202,14 +202,14 @@ let skillLogos = document.querySelectorAll(".skillLogo")
 for(const skillLogo of skillLogos){
 	skillLogo.ontouchstart = function (element){
 		let test =element
-		alert("next function resetclasslist")
+		
 		resetClasslist()
-		alert("next function addSelected")
+		
 		addSelected(element)}
 	}
 for (const skillLogo of skillLogos){
 skillLogo.ontouchend = function (element){
-		alert("last function addSelected")
+		alert("in touchend")
 		alert("next function resetHidden")
 		resetHidden()
 		alert("next function switch")
